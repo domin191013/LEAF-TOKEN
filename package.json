@@ -1,0 +1,47 @@
+{
+  "name": "leaf-contracts",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy-token": "node ./deploy/deploy-token.js",
+    "deploy-vesting": "node ./deploy/deploy-vesting.js",
+    "deploy-longvesting": "node ./deploy/deploy-longvesting.js",
+    "deploy-presale": "node ./deploy/deploy-presale.js",
+    "integration1": "node ./scripts/integration_presale.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stripcoin1/LEAF-contracts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stripcoin1/LEAF-contracts/issues"
+  },
+  "homepage": "https://github.com/Stripcoin1/LEAF-contracts#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.2",
+    "hardhat": "^2.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "dotenv": "^16.0.0",
+    "eth-revert-reason": "^1.0.3",
+    "hardhat-deploy": "^0.11.4"
+  }
+}
